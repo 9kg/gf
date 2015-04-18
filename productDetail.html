@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>上海发路光伏科技有限公司</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/falu.css" />
+	</head>
+
+	<body>
+		<div class="container">
+			
+		</div>
+
+
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/falu.js"></script>
+		<script>
+			$(function() {
+				var title,imgurl;
+				var params=window.location.search.substr(1);
+				title=unescape(params.split("&")[0].split("itle=")[1]);
+				
+				imgurl=params.split("mgurl=")[1];
+				var imgItem=$("<div>").append($("<img>").attr("src",imgurl).css({"max-width":"800px"})).css({"text-align":"center"});
+				$(".container").append($("<h3>").html(title).css({"text-align":"center"})).append(imgItem);
+			});
+		</script>
+	</body>
+
+</html>

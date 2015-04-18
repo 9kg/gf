@@ -1,0 +1,417 @@
+/*all*/
+#hp-flag{
+	height: 120px;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+	background: #2c5700;
+	background: -moz-linear-gradient(45deg, #2c5700 20%, #fff 100%);
+	background: -webkit-gradient(linear, left bottom, right top, color-stop(20%,#2c5700), color-stop(100%,#fff));
+	background: -webkit-linear-gradient(45deg, #2c5700 20%,#fff 100%);
+	background: -o-linear-gradient(45deg, #2c5700 20%,#fff 100%);
+	background: -ms-linear-gradient(45deg, #2c5700 20%,#fff 100%);
+	background: linear-gradient(45deg, #2c5700 20%,#fff 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c5700', endColorstr='#fff',GradientType=1 );
+	-webkit-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+	-moz-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+	box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+}
+#hp-flag:after{
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	opacity: .4;
+	background: url('../img/hp-flag-bg.png') repeat center center;
+}
+#hp-flag img{
+	width: 120px;
+	float: left;
+	margin-left: 80px;
+}
+#hp-flag h1{
+	float: left;
+	margin-left: 40px;
+	line-height: 50px;
+	font-size: 40px;
+	color: #fff;
+	text-shadow: 15px 5px 3px #333;
+}
+#hp-flag h1 span{
+	margin-left: 50px;
+	color:#226;
+	font-size: 30px;
+	letter-spacing: 3px;
+	text-shadow: 15px 5px 3px #254;
+}
+#page-top{
+	margin-bottom: 0px;
+}
+#page-bottom{
+	padding: 10px 0;
+	background-color: #1b1b1b;
+	color:#fff;
+}
+.deal2bug{
+	height: 40px;
+}
+.navbar-inner .brand{
+	background-image: url('../img/minfllogo.png');
+	background-repeat: no-repeat;
+	padding-left: 50px;
+	margin-left: 20px;
+}
+#qqContact{
+	position: fixed;
+	top: 60px;
+	right: 5px;
+	z-index: 9999;
+	box-shadow: 15px 5px 10px #999;
+	transform:rotate(15deg);
+	-ms-transform:rotate(15deg); /* IE 9 */
+	-webkit-transform:rotate(15deg); /* Safari and Chrome */
+	animation:qqShow 2s infinite alternate;
+	-webkit-animation:qqShow 2s infinite alternate; /* Safari and Chrome */
+}
+@keyframes qqShow
+{
+0%   {transform:rotate(75deg);-ms-transform:rotate(75deg);-webkit-transform:rotate(75deg);top:60px;right: 25px;}
+100% {transform:rotate(25deg);-ms-transform:rotate(25deg);-webkit-transform:rotate(25deg);top:65px;right: 0px;}
+}
+
+@-webkit-keyframes qqShow /* Safari and Chrome */
+{
+0%   {transform:rotate(75deg);-ms-transform:rotate(75deg);-webkit-transform:rotate(75deg);top:60px;right: 25px;}
+100% {transform:rotate(25deg);-ms-transform:rotate(25deg);-webkit-transform:rotate(25deg);top:65px;right: 0px;}
+}
+.page-header{
+	color: #08c;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-shadow: 12px 5px 2px #ddd;
+}
+.bs-docs-example{
+	line-height: 2em;
+}
+.bs-docs-sidebar ul{
+	box-shadow: 10px 10px 5px #bbb;
+}
+.bs-docs-example p{
+	text-indent: 2em;
+}
+.bs-docs-example .badge {
+	text-indent: 0em;
+	margin: 0 8px 5px 0;
+}
+.bs-docs-example h3{
+	color: #395;
+	font-size: 22px;
+	font-weight: normal;
+}
+#gsjjimg,#qywhimg,#fwzcimg,#hzfsimg,#hzqyimg,#czdlimg{
+	width: 50%;
+	height: auto;
+	float: left;
+	margin: 10px;
+}
+#qywhimg,#fwzcimg,#hzqyimg{
+	float: right;
+	width: 40%;
+}
+#gsjjimg img,#qywhimg img,#fwzcimg img,#hzfsimg img,#hzqyimg img,#czdlimg img{
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+/*homepage*/
+.carousel{
+	height:300px;
+	background-color: #000;
+}
+.carousel .item{
+	height:300px;
+	background-color: #000;
+	cursor: pointer;
+}
+.carousel img{
+	width:100%;
+	height: auto;
+}
+.carousel-caption{
+	text-align: center;
+}
+#showProduct [id*="Show"]{
+	color: #333;
+	background-color: #fff;
+	padding: 10px;
+	margin: 30px 5px 5px;
+	height: 200px;
+	overflow: hidden;
+	line-height: 22px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	box-shadow: 10px 10px 40px 5px #666;
+	cursor: pointer;
+}
+#showProduct h2{
+	text-align: center;
+	font-size: 26px;
+	font-weight: 400;
+	margin: 5px 0px;
+	color: #a57;
+}
+#myTab{
+	margin-top: 30px;
+}
+#myTabContent p{
+	text-indent: 2em;
+	line-height: 25px;
+}
+#myTabContent .badge{
+	text-indent: 0em;
+	margin: 0 8px 5px 0;
+}
+#myTab3 p{
+	text-indent: 0em;
+}
+.nav-tabs{
+	border-bottom: 1px solid #0ac;
+}
+.nav-tabs>li>a:hover{
+	color: #fff;
+	background-color: #999;
+	border-bottom: 1px solid #fff;
+	background: -moz-linear-gradient(180deg, #999 0%, #fff 100%);
+	background: -webkit-gradient(linear, top, bottom, color-stop(0%,#999), color-stop(100%,#fff));
+	background: -webkit-linear-gradient(180deg, #999 0%,#fff 100%);
+	background: -o-linear-gradient(180deg, #999 0%,#fff 100%);
+	background: -ms-linear-gradient(180deg, #999 0%,#fff 100%);
+	background: linear-gradient(180deg, #999 20%,#fff 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#999', endColorstr='#fff',GradientType=1 );
+}
+.nav-tabs>.active>a,.nav-tabs>.active>a:hover,.nav-tabs>.active>a:focus{
+	background-color: #08c;
+	color: #fff;
+	background: -moz-linear-gradient(180deg, #08c 0%, #fff 100%);
+	background: -webkit-gradient(linear, top, bottom, color-stop(0%,#08c), color-stop(100%,#fff));
+	background: -webkit-linear-gradient(180deg, #08c 0%,#fff 100%);
+	background: -o-linear-gradient(180deg, #08c 0%,#fff 100%);
+	background: -ms-linear-gradient(180deg, #08c 0%,#fff 100%);
+	background: linear-gradient(180deg, #08c 20%,#fff 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#08c', endColorstr='#fff',GradientType=1 );
+	border: 1px solid #0ac;
+	border-bottom: 1px solid #fff;
+	outline: none;
+}
+
+/*contactWay*/
+#contactLeft{
+	margin: 40px 0;
+	color: #fff;
+	font-size: 16px;
+	position: relative;
+}
+#contactLeft #contactItemContainer{
+	padding: 20px;
+	background-color: #245;
+	height: 350px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	box-shadow: 10px 10px 5px #999;
+}
+#contactLeft .contactItem {
+	position: relative;
+	height: 50px;
+	line-height: 28px;
+}
+#contactWay .contactItem .contactContent {
+	position: absolute;
+	left: 85px;
+	top: 0px;
+	font-size: 14px;
+}
+#contactWay .contactItem ol li{
+	line-height: 28px;
+}
+#dituContent{
+	width: 100%;
+	height: 500px;
+	margin: 40px 0px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+.btn-success{
+	box-shadow: 5px 5px 3px #999;
+	transform:rotate(12deg);
+	-ms-transform:rotate(12deg); /* IE 9 */
+	-webkit-transform:rotate(12deg); /* Safari and Chrome */
+}
+#liuyanban{
+	width: 100%;height: 100px;text-align: center;line-height: 100px;position: relative;
+}
+#liuyanban img{
+	position: absolute;top:0px;left:0px;z-index: -3;width: 100%;height:100%
+}
+/*product show*/
+#dynamicInformationContent .thumbnail{
+	box-shadow: 10px 10px 5px #999;
+}
+#dynamicInformationContent .thumbnail a{
+	text-align: center;
+	text-decoration: none;
+}
+#dynamicInformationContent .thumbnail a img{
+	border: 1px solid #ccc;
+}
+#dynamicInformationContent .thumbnail a h4{
+	color: #36a;
+	font-weight: 400;
+	font-size: 16px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;	
+}
+
+.accordion-heading .accordion-toggle{
+	color: #c72;
+}
+/* Sidenav for Docs
+-------------------------------------------------- */
+
+.bs-docs-sidenav {
+  width: 228px;
+  margin: 150px 0 0;
+  padding: 0;
+  background-color: #fff;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+  -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.065);
+     -moz-box-shadow: 0 1px 4px rgba(0,0,0,.065);
+          box-shadow: 0 1px 4px rgba(0,0,0,.065);
+}
+.bs-docs-sidenav > li > a {
+  display: block;
+  width: 190px \9;
+  margin: 0 0 -1px;
+  padding: 8px 14px;
+  border: 1px solid #e5e5e5;
+}
+.bs-docs-sidenav > li:first-child > a {
+  -webkit-border-radius: 6px 6px 0 0;
+     -moz-border-radius: 6px 6px 0 0;
+          border-radius: 6px 6px 0 0;
+}
+.bs-docs-sidenav > li:last-child > a {
+  -webkit-border-radius: 0 0 6px 6px;
+     -moz-border-radius: 0 0 6px 6px;
+          border-radius: 0 0 6px 6px;
+}
+.bs-docs-sidenav > .active > a {
+  position: relative;
+  z-index: 2;
+  padding: 9px 15px;
+  border: 0;
+  text-shadow: 0 1px 0 rgba(0,0,0,.15);
+  -webkit-box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);
+     -moz-box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);
+          box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);
+}
+/* Chevrons */
+.bs-docs-sidenav .icon-chevron-right {
+  float: right;
+  margin-top: 2px;
+  margin-right: -6px;
+  opacity: .25;
+}
+.bs-docs-sidenav > li > a:hover {
+  background-color: #f5f5f5;
+}
+.bs-docs-sidenav a:hover .icon-chevron-right {
+  opacity: .5;
+}
+.bs-docs-sidenav .active .icon-chevron-right,
+.bs-docs-sidenav .active a:hover .icon-chevron-right {
+  background-image: url(../img/glyphicons-halflings-white.png);
+  opacity: 1;
+}
+.bs-docs-sidenav.affix {
+  top: 40px;
+}
+.bs-docs-sidenav.affix-bottom {
+  position: absolute;
+  top: auto;
+  bottom: 270px;
+}
+#dynamicInformationContent>section{
+	padding-top: 30px;
+}
+/* Responsive
+-------------------------------------------------- */
+
+/* Desktop large
+------------------------- */
+@media (min-width: 1200px) {
+  .bs-docs-sidenav {
+    width: 258px;
+  }
+  .bs-docs-sidenav > li > a {
+    width: 230px \9; /* Override the previous IE8-9 hack */
+  }
+}
+
+/* Desktop
+------------------------- */
+@media (max-width: 980px) {
+  /* When affixed, space properly */
+  .bs-docs-sidenav {
+    top: 0;
+    width: 218px;
+    margin-top: 150px;
+    margin-right: 0;
+  }
+}
+
+/* Tablet to desktop
+------------------------- */
+@media (min-width: 768px) and (max-width: 979px) {
+  /* Remove any padding from the body */
+  body {
+    padding-top: 0;
+  }
+  /* Adjust sidenav width */
+  .bs-docs-sidenav {
+    width: 166px;
+    margin-top: 180px;
+  }
+  .bs-docs-sidenav.affix {
+    top: 0;
+  }
+}
+
+/* Tablet
+------------------------- */
+@media (max-width: 767px) {
+  /* Remove any padding from the body */
+  body {
+    padding-top: 0;
+  }
+  /* Sidenav */
+  .bs-docs-sidenav {
+    width: auto;
+    margin-top: 25px;
+  }
+  .bs-docs-sidenav.affix {
+    position: static;
+    width: auto;
+    top: 0;
+  }
+}
