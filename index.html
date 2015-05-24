@@ -162,6 +162,131 @@
 
 			<hr>
 		</div>
+		
+		<div class="container pro-carousel">
+			<ul class="thumbnails pro-img-ct">
+				<li class="span3">
+					<div class="thumbnail">
+						<a href="productDetail.html" target="_blank">
+							<img alt="300x200" src="images/4-5.png" style="width: 300px; height: 120px;">
+							<div class="caption">
+								<h4>太阳能地插灯</h4>
+							</div>
+						</a>
+					</div>
+				</li>
+				<li class="span3">
+					<div class="thumbnail">
+						<a href="productDetail.html" target="_blank">
+							<img alt="300x200" src="images/4-6.png" style="width: 300px; height: 120px;">
+							<div class="caption">
+								<h4>太阳能地插灯</h4>
+							</div>
+						</a>
+					</div>
+				</li>
+				<li class="span3">
+					<div class="thumbnail">
+						<a href="productDetail.html" target="_blank">
+							<img alt="300x200" src="images/4-7.png" style="width: 300px; height: 120px;">
+							<div class="caption">
+								<h4>太阳能地插灯</h4>
+							</div>
+						</a>
+					</div>
+				</li>
+				<li class="span3">
+					<div class="thumbnail">
+						<a href="productDetail.html" target="_blank">
+							<img alt="300x200" src="images/4-8.png" style="width: 300px; height: 120px;">
+							<div class="caption">
+								<h4>太阳能地插灯</h4>
+							</div>
+						</a>
+					</div>
+				</li>
+				<li class="span3">
+					<div class="thumbnail">
+						<a href="productDetail.html" target="_blank">
+							<img alt="300x200" src="images/4-5.png" style="width: 300px; height: 120px;">
+							<div class="caption">
+								<h4>太阳能地插灯</h4>
+							</div>
+						</a>
+					</div>
+				</li>
+				<li class="span3">
+					<div class="thumbnail">
+						<a href="productDetail.html" target="_blank">
+							<img alt="300x200" src="images/4-6.png" style="width: 300px; height: 120px;">
+							<div class="caption">
+								<h4>太阳能地插灯</h4>
+							</div>
+						</a>
+					</div>
+				</li>
+				<li class="span3">
+					<div class="thumbnail">
+						<a href="productDetail.html" target="_blank">
+							<img alt="300x200" src="images/4-7.png" style="width: 300px; height: 120px;">
+							<div class="caption">
+								<h4>太阳能地插灯</h4>
+							</div>
+						</a>
+					</div>
+				</li>
+				<li class="span3">
+					<div class="thumbnail">
+						<a href="productDetail.html" target="_blank">
+							<img alt="300x200" src="images/4-8.png" style="width: 300px; height: 120px;">
+							<div class="caption">
+								<h4>太阳能地插灯</h4>
+							</div>
+						</a>
+					</div>
+				</li>
+				<li class="span3">
+					<div class="thumbnail">
+						<a href="productDetail.html" target="_blank">
+							<img alt="300x200" src="images/4-5.png" style="width: 300px; height: 120px;">
+							<div class="caption">
+								<h4>太阳能地插灯</h4>
+							</div>
+						</a>
+					</div>
+				</li>
+				<li class="span3">
+					<div class="thumbnail">
+						<a href="productDetail.html" target="_blank">
+							<img alt="300x200" src="images/4-6.png" style="width: 300px; height: 120px;">
+							<div class="caption">
+								<h4>太阳能地插灯</h4>
+							</div>
+						</a>
+					</div>
+				</li>
+				<li class="span3">
+					<div class="thumbnail">
+						<a href="productDetail.html" target="_blank">
+							<img alt="300x200" src="images/4-7.png" style="width: 300px; height: 120px;">
+							<div class="caption">
+								<h4>太阳能地插灯</h4>
+							</div>
+						</a>
+					</div>
+				</li>
+				<li class="span3">
+					<div class="thumbnail">
+						<a href="productDetail.html" target="_blank">
+							<img alt="300x200" src="images/4-8.png" style="width: 300px; height: 120px;">
+							<div class="caption">
+								<h4>太阳能地插灯</h4>
+							</div>
+						</a>
+					</div>
+				</li>
+			</ul>
+		</div>
 
 		<div class="container">
 			<ul id="myTab" class="nav nav-tabs">
@@ -275,6 +400,23 @@
 						window.location.href="joinedCooperation.html#"+joinArr[i];
 					});
 				})
+				var tt = 1;
+				var proCarLiNum = parseInt($(".pro-img-ct li").length-3);
+				function proCar(){
+					var leftVal;
+					if(tt<proCarLiNum){
+						leftVal = tt*300;
+					}else{
+						leftVal = tt = 0;
+					}
+					$(".pro-img-ct").animate({"left":"-"+leftVal+"px"});
+					tt++;
+				}
+				setInterval(proCar, 3000);
+
+				$(".pro-img-ct .thumbnail>a").each(function(){
+					$(this).attr("href",$(this).attr("href")+"?title="+escape($(this).find(".caption h4").text())+"&imgurl="+$(this).find("img").attr("src"));
+				});
 			});
 		</script>
 	</body>

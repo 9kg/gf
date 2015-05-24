@@ -354,6 +354,26 @@
 #dynamicInformationContent>section{
 	padding-top: 30px;
 }
+
+/*homepage product carousel*/
+.pro-carousel{
+	border: 1px solid #C3F218;
+	box-shadow: 0px 0px 50px #E7F23C;
+	overflow: hidden;
+	border-radius: 8px;
+}
+.pro-img-ct{
+	width: 400%;
+	position: relative;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+.pro-img-ct li{
+	margin-bottom: 0;
+}
+.pro-img-ct li h4{
+	text-align: center;
+}
 /* Responsive
 -------------------------------------------------- */
 
